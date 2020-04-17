@@ -1,0 +1,136 @@
+.portfolio{
+  background-color: #E4E4E4;
+  padding-top: 20px;
+  position: relative;
+}
+
+.title{
+  color: black;
+  display: block;
+  position: relative;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 5px;
+  font-size: px-to-rem(50px);
+  line-height: px-to-rem(50px);
+  font-weight: 700;
+  float: none;
+}
+
+.desc{
+  margin: 0 0 15px 0;
+  color: #515151;
+  position: relative;
+  font-size: px-to-rem(22px);
+  line-height: px-to-rem(30px);
+  font-weight: 400;
+  text-align: center;
+}
+
+.crutch{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100%;
+}
+
+.dermo{
+  z-index: 8;
+}
+
+.cites{
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  grid-template-rows: repeat(3, 200px);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border: 1px solid black;
+    }
+
+  a{
+    &::before {
+      width: 322px;
+      height: 12px;
+      content: "";
+      display: block;
+      background: url("/img/header.png") no-repeat;
+      z-index: 100;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+  }
+}
+
+
+.fp-controlArrow {
+  display: none;
+}
+
+.arrow-next{
+  position: absolute;
+  right: 70px;
+  top: 50%;
+  cursor: pointer;
+  width: 80px;
+  height: 110px;
+  z-index: 4;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.arrow-prev{
+  position: absolute;
+  left: 70px;
+  top: 50%;
+  cursor: pointer;
+  width: 80px;
+  height: 110px;
+  z-index: 4;
+
+  img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1366px) {
+
+  .arrow-next{
+    right: 10px;
+  }
+
+  .arrow-prev{
+    left: 10px;
+  }
+}
+
+@media (max-width: 1250px) {
+
+  .cites{
+    position: relative;
+    grid-template-columns: repeat(2, 320px);
+    grid-template-rows: repeat(6, 200px);
+    //left: 50%;
+    //transform: translateX(-50%);
+
+  }
+
+  .fp-scroller{
+    position: relative;
+  }
+
+}
+
+
+

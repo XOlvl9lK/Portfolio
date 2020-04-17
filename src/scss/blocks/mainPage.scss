@@ -1,0 +1,83 @@
+.mainPage{
+  height: 100%;
+  width: 100%;
+  background: url("/img/background.jpg")  top no-repeat black;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+
+  &:before{
+    background: rgba(0, 0, 0, 0.8);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
+.slogan{
+  position: relative;
+  padding-top: 170px;
+  font-size: px-to-rem(34px);
+  line-height: px-to-rem(50px);
+  font-weight: 700;
+  display: block;
+  color: white;
+  text-align: center;
+  margin-bottom: 85px;
+}
+
+.request{
+  background-color: #AC0C0C;
+  font-size: px-to-rem(20px);
+  line-height: px-to-rem(20px);
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  position: relative;
+  width: 70%;
+  min-width: 182px;
+  max-width: 360px;
+  height: 60px;
+  display: block;
+  position: relative;
+  margin: auto;
+  z-index: 3;
+  transition-property: background-color;
+  transition-duration: 400ms;
+
+  &:hover{
+    cursor: pointer;
+    background-color: #DA1010;
+  }
+}
+
+@media (min-width: 580px){
+
+  .slogan{
+    font-size: px-to-rem(40px);
+    line-height: px-to-rem(56px);
+    margin-bottom: 140px;
+  }
+
+  .request{
+    font-size: px-to-rem(24px);
+  }
+
+}
+
+@media (min-width: 1024px) {
+
+  .slogan{
+    padding-top: 250px;
+    font-size: px-to-rem(50px);
+    line-height: px-to-rem(68px);
+  }
+
+
+}

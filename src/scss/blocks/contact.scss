@@ -1,0 +1,22 @@
+.contact{
+  height: 100%;
+  width: 100%;
+  background: url("/img/contact-background.jpg")  top no-repeat black;
+  background-size: cover;
+  z-index: 2;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  &:before{
+    background: rgba(0, 0, 0, 0.8);
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+  }
+}
+
