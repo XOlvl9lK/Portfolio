@@ -12,7 +12,7 @@ class MainPage extends React.Component{
                     <div className="slogan">
                         I MAKE AWESOME THINGS,<br/>FOR AWESOME PEOPLE
                     </div>
-                        <button className="request">Оставить заявку</button>
+                        <a href="#openModal" className="request">Оставить заявку</a>
                 </div>
             </div>
         );

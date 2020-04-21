@@ -18,7 +18,7 @@
 }
 
 .desc{
-  margin: 0 0 15px 0;
+  margin: 0 0 35px 0;
   color: #515151;
   position: relative;
   font-size: px-to-rem(22px);
@@ -28,23 +28,16 @@
 }
 
 .crutch{
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
   min-height: 100%;
 }
 
-.dermo{
-  z-index: 8;
-}
-
 .cites{
-  position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 320px);
-  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(auto-fill, 320px);
+  grid-template-rows: repeat(3, 190px);
   grid-column-gap: 50px;
   grid-row-gap: 50px;
+  justify-content: center;
 
     img {
       width: 100%;
@@ -115,22 +108,27 @@
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 650px) {
 
-  .cites{
-    position: relative;
-    grid-template-columns: repeat(2, 320px);
-    grid-template-rows: repeat(6, 200px);
-    //left: 50%;
-    //transform: translateX(-50%);
-
+  .desc{
+    display: none;
   }
 
-  .fp-scroller{
-    position: relative;
+  .title{
+    font-size: px-to-rem(40px);
+    margin-bottom: 20px;
   }
 
 }
 
+@media (max-width: 455px) {
+
+  .title{
+    font-size: px-to-rem(26px);
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+
+}
 
 
