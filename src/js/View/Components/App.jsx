@@ -7,10 +7,11 @@ import MainPage from "./MainPage.jsx";
 import Portfolio from "./Portfolio.jsx";
 import About from "./About.jsx";
 import Contact from "./Contact.jsx";
-
+import Modal from "./Modal.jsx";
 
 const App = () => (
     <div className="container">
+        <Modal/>
         <Header/>
         <ReactFullpage
             licenseKey = {'5ED433DC-CFEE4F98-9A469C6E-EA7EC6CF'}
