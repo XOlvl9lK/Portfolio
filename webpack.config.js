@@ -52,7 +52,6 @@ const config = {
             },
             {
                 test: /\.css$/,
-                exclude: /(node_modules|bower_components|dist)/,
                 use: [
                     require.resolve('style-loader'),
                     {
@@ -150,6 +149,10 @@ const config = {
             {
                 from: "./src/img",
                 to: "./img"
+            },
+            {
+                from: "./src/php",
+                to: "./php"
             },
             {
                 from: "./src/uploads",
