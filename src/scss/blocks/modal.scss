@@ -1,0 +1,159 @@
+.off{
+  display: none;
+}
+
+.modal-open{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 150;
+  animation: open 100ms ease-in;
+  animation-fill-mode: forwards;
+}
+
+.modal-close{
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 150;
+  animation: close 100ms ease-in;
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
+
+.close{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: none;
+  cursor: pointer;
+  z-index: 155;
+}
+
+@keyframes open {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to  {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes close {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to  {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+}
+
+.modal-window{
+  width: 27%;
+  max-width: 600px;
+  min-width: 400px;
+  z-index: 160;
+  position: absolute;
+  top: 100px;
+  animation: open 500ms;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: black;
+}
+
+.modal-callback{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  textarea{
+    resize: none;
+    width: 85%;
+    height: 110px;
+    margin-bottom: 30px;
+    font-size: px-to-rem(22px);
+    line-height: px-to-rem(30px);
+    border: none;
+    border-radius: 6px;
+
+    &::-webkit-input-placeholder{
+      font-size: px-to-rem(22px);
+      line-height: px-to-rem(30px);
+      color: #A6A6A6;
+    }
+
+    &:first-child{
+      margin-top: 70px;
+    }
+
+    &:nth-child(3){
+      height: 220px;
+    }
+  }
+}
+
+.modal-button{
+  background-color: #AC0C0C;
+  font-size: px-to-rem(20px);
+  line-height: px-to-rem(20px);
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: 6px;
+  position: relative;
+  width: 70%;
+  min-width: 182px;
+  max-width: 360px;
+  height: 60px;
+  display: block;
+  margin: auto;
+  z-index: 3;
+  transition-property: background-color;
+  transition-duration: 400ms;
+  margin-bottom: 50px;
+
+  &:hover{
+    cursor: pointer;
+    background-color: #DA1010;
+  }
+}
+
+@media (max-width: 450px) {
+  .modal-window{
+    max-width: 300px;
+    min-width: 300px;
+    width: 300px;
+  }
+
+  .modal-callback{
+
+    textarea{
+      height: 70px;
+      margin-bottom: 20px;
+
+      &:first-child{
+        margin-top: 40px;
+      }
+
+      &:nth-child(3){
+        height: 150px;
+      }
+    }
+  }
+
+  .modal-button{
+    margin-bottom: 30px;
+  }
+
+}
