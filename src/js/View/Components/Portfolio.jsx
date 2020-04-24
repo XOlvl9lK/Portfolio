@@ -15,30 +15,30 @@ class Portfolio extends React.Component{
                         <div className="slide" data-anchor="slide1">
                             <div className="crutch">
                                 <div className="cites">
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
                                 </div>
                             </div>
                         </div>
                         <div className="slide" data-anchor="slide2">
                             <div className="crutch">
                                 <div className="cites">
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
-                                    <a href="#"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                                    <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
                                 </div>
                             </div>
                         </div>
