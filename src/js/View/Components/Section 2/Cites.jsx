@@ -1,5 +1,4 @@
 import React from "react";
-import citesData from "./citesData";
 
 class Cites extends React.Component {
     constructor(props) {
@@ -7,6 +6,7 @@ class Cites extends React.Component {
     }
 
     render() {
+        const { citesData } = this.props;
 
         return (
             <div className="cites">
