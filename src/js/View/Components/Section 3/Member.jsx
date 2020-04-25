@@ -9,15 +9,15 @@ class Member extends React.Component{
     render() {
         const { imgURL, name, description} = this.props;
 
-        const descRender = description.map((desc, index) => <li key={index}>{desc}</li>);
-
         return(
             <figure>
                 <img src={imgURL} alt={name}/>
                 <figcaption>
                     {name}
                     <ul>
-                        {descRender}
+                        {description.map((desc, index) => (
+                            <li key={index}>{desc}</li>
+                        ))}
                     </ul>
                 </figcaption>
             </figure>
