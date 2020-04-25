@@ -1,13 +1,13 @@
 import React from "react";
 import Cites from "./Cites.jsx";
 
+
 class Portfolio extends React.Component{
     constructor(props) {
         super(props);
     }
 
     render() {
-
 
         return (
             <div className="portfolio">

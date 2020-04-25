@@ -1,4 +1,5 @@
 import React from "react";
+import citesData from "./citesData";
 
 class Cites extends React.Component {
     constructor(props) {
@@ -6,17 +7,14 @@ class Cites extends React.Component {
     }
 
     render() {
+
         return (
             <div className="cites">
-            <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
-            <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
-            <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
-            <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
-            <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
-            <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
-            <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
-            <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
-            <a href="https://torrent-games.co/" target="_blank"><img src="img/cite.png" alt="cite"/></a>
+                {citesData.map(({ href, imgSrc, imgAlt, index }) => (
+                    <a key={imgAlt} href={href}>
+                        <img src={imgSrc} alt={imgAlt}/>
+                    </a>
+                ))}
             </div>
         );
     }
