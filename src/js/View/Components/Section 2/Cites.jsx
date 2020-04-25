@@ -12,7 +12,7 @@ class Cites extends React.Component {
             <div className="cites">
                 {citesData.map(({ href, imgSrc, imgAlt, index }) => (
                     <a key={imgAlt} href={href}>
-                        <img src={imgSrc} alt={imgAlt}/>
+                        <img src={imgSrc} alt={imgAlt} target="_blank"/>
                     </a>
                 ))}
             </div>

@@ -28,7 +28,6 @@ class App extends React.Component {
                 isModalVisible: !prevState.isModalVisible
             }
         });
-        console.log("CLICK");
     }
 
     scrollOff(index, nextIndex, direction) {
@@ -45,7 +44,6 @@ class App extends React.Component {
                     scrollingSpeed={900}
                     scrollOverflow={'true'}
                     onLeave={this.scrollOff}
-
 
                     render={({state, fullpageApi}) => {
                         return (
