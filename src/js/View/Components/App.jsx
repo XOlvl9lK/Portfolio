@@ -4,11 +4,11 @@ import s from './App.module.css'
 import ReactFullpage from '@fullpage/react-fullpage';
 import "script-loader!../../../../scrolloverflow.min.js"
 
-import Header from "./Header.jsx";
-import MainPage from "./MainPage.jsx";
-import Portfolio from "./Portfolio.jsx";
-import About from "./About.jsx";
-import Contact from "./Contact.jsx";
+import Header from "./Header/Header.jsx";
+import MainPage from "./Section 1/MainPage.jsx";
+import Portfolio from "./Section 2/Portfolio.jsx";
+import About from "./Section 3/About.jsx";
+import Contact from "./Section 4/Contact.jsx";
 
 class App extends React.Component {
     constructor(props) {
