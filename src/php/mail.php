@@ -11,5 +11,6 @@
         return $data;
     }
 
-    mail("donating1@yandex.ru", "Письмо с сайта-портфолио", "Имя отправителя: ".$name.)
+    mail("donating1@yandex.ru", "Письмо с сайта-портфолио", "Имя отправителя: ".$name.". E-mail отправителя: ".$email.". Сообщение: ".$message);
+    header("Location: localhost");
 ?>

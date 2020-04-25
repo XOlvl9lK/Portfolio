@@ -17,7 +17,7 @@ class Modal extends React.Component{
             <div id="wrapper" className="off" >
                 <div className="close" onClick={this.handleClick}></div>
                 <div className="modal-window">
-                    <form action="/php/mail.php" method="post" className="modal-callback">
+                    <form action="php/mail.php" method="post" className="modal-callback">
                         <textarea className="modal-name" type="text" name="name" placeholder="YOUR NAME" required></textarea>
                         <textarea className="modal-mail" type="text" name="email" placeholder="YOUR MAIL" required></textarea>
                         <textarea className="modal-message" type="text" name="message" placeholder="YOUR MESSAGE" required></textarea>

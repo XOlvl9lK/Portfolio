@@ -7,13 +7,10 @@
         $data = htmlspecialchars($data);
         $data = urldecode($data);
         $data = trim($data);
+
+        return $data;
     }
 
-    $name = 5;
+    mail("donating1@yandex.ru", "Письмо с сайта-портфолио", "Имя отправителя: ".$name.". E-mail отправителя: ".$email.". Сообщение: ".$message."\r\n");
 
-    echo $name;
-    echo "<br>";
-    echo $email;
-    echo "<br>";
-    echo $message;
 ?>
