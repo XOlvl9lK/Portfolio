@@ -1,21 +1,10 @@
 import React from "react";
 
-class Modal extends React.Component{
-    constructor(props) {
-        super(props);
-        this.handleClick = this.handleClick.bind(this);
-    }
+const Modal = ({ handleClick }) => {
 
-    handleClick() {
-        const modal = document.getElementById('wrapper');
-        modal.className = "modal-close";
-        this.props.modalVisibleChange();
-    }
-
-    render() {
         return (
-            <div id="wrapper" className="off" >
-                <div className="close" onClick={this.handleClick}></div>
+            <div id="modal" className="modal-close" >
+                <div className="close" onClick={handleClick}></div>
                 <div className="modal-window">
                     <form action="php/mail.php" method="post" className="modal-callback">
                         <textarea className="modal-name" type="text" name="name" placeholder="YOUR NAME" required></textarea>
@@ -26,7 +15,8 @@ class Modal extends React.Component{
                 </div>
             </div>
         );
-    }
+
 }
 
 export default Modal;
+

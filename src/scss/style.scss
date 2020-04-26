@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
+
+@import "fonts";
 @import "normalize";
 @import "variables";
-@import "fonts";
 @import "mixins";
 @import "core";
 @import "blocks/header";
@@ -11,5 +12,3 @@
 @import "blocks/about";
 @import "blocks/contact";
 @import "blocks/modal";
-
-

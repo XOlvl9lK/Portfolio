@@ -1,17 +1,5 @@
 .off{
-  display: none;
-}
 
-.modal-open{
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 150;
-  animation: open 100ms ease-in;
-  animation-fill-mode: forwards;
 }
 
 .modal-close{
@@ -22,9 +10,16 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 150;
-  animation: close 100ms ease-in;
-  animation-fill-mode: forwards;
+  margin-top: 100px;
+  opacity: 0;
+  transition: opacity 300ms, margin-top 300ms;
   pointer-events: none;
+}
+
+.modal-open{
+  opacity: 1;
+  margin-top: 0;
+  pointer-events: auto;
 }
 
 .close{
@@ -33,30 +28,10 @@
   height: 100%;
   background: none;
   cursor: pointer;
-  z-index: 155;
+  padding-top: 100px;
 }
 
-@keyframes open {
-  from {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-  to  {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
-@keyframes close {
-  from {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  to  {
-    opacity: 0;
-    transform: translateY(100px);
-  }
-}
 
 .modal-window{
   width: 27%;

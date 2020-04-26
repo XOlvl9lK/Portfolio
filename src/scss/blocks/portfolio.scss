@@ -38,6 +38,7 @@
   grid-column-gap: 50px;
   grid-row-gap: 50px;
   justify-content: center;
+  padding-top: 10px;
 
     img {
       width: 100%;
@@ -56,6 +57,12 @@
       z-index: 100;
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
+
+    }
+
+    &:hover {
+      transform: scale(1.07, 1.07);
+      transition: transform, 300ms;
     }
   }
 }
@@ -131,4 +138,10 @@
 
 }
 
+@media (max-width: 720px) {
+
+  .arrow-prev, .arrow-next{
+    display: none;
+  }
+}
 
