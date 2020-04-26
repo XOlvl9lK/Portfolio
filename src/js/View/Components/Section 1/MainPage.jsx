@@ -8,8 +8,7 @@ class MainPage extends React.Component{
     }
 
     handleClick() {
-        const modal = document.getElementById('wrapper');
-        modal.className = "modal-open";
+        document.getElementById('modal').classList.toggle("modal-open")
         this.props.modalVisibleChange();
     }
 
@@ -17,7 +16,7 @@ class MainPage extends React.Component{
 
         return (
             <div className="mainPage">
-                <Modal modalVisibleChange={this.props.modalVisibleChange} isModalVisible={this.props.isModalVisible}/>
+                <Modal  handleClick={this.handleClick}/>
                 <div className="mainPage-wrap wrap">
                     <div className="slogan">
                         I MAKE AWESOME THINGS,<br/>FOR AWESOME PEOPLE
