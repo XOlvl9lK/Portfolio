@@ -9,13 +9,14 @@ import MainPage from "./Section 1/MainPage.jsx";
 import Portfolio from "./Section 2/Portfolio.jsx";
 import About from "./Section 3/About.jsx";
 import Contact from "./Section 4/Contact.jsx";
+import Navigation from "./Navigation/Navigation.jsx";
 
 class App extends React.Component {
     constructor(props) {
         super(props);
 
         this.state = {
-            isModalVisible: false
+            isModalVisible: false,
         }
 
         this.modalVisibleChange = this.modalVisibleChange.bind(this);
@@ -34,11 +35,11 @@ class App extends React.Component {
         return !this.state.isModalVisible;
     }
 
-
     render() {
         return (
             <div className="container">
                 <Header/>
+                <Navigation/>
                 <ReactFullpage
                     licenseKey={'5ED433DC-CFEE4F98-9A469C6E-EA7EC6CF'}
                     scrollingSpeed={900}
@@ -49,20 +50,20 @@ class App extends React.Component {
                         return (
                             <ReactFullpage.Wrapper>
                                 <div>
-                                    <div className="section">
+                                    <div className="section" data-anchor="section-1">
                                         <MainPage modalVisibleChange={this.modalVisibleChange} isModalVisible={this.state.isModalVisible}/>
                                     </div>
-                                    <div className="section page">
+                                    <div className="section" data-anchor="section-2">
                                         <div onClick={() => fullpageApi.moveSlideRight()} className="arrow-next"><img
                                             src="img/arrow-next-mobile.svg" alt="next"/></div>
                                         <div onClick={() => fullpageApi.moveSlideLeft()} className="arrow-prev"><img
                                             src="img/arrow-prev-mobile.svg" alt="next"/></div>
                                         <Portfolio/>
                                     </div>
-                                    <div className="section dermo">
+                                    <div className="section top" data-anchor="section-3">
                                         <About/>
                                     </div>
-                                    <div className="section">
+                                    <div className="section" data-anchor="section-4">
                                         <Contact/>
                                     </div>
                                 </div>
