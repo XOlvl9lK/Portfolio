@@ -74,7 +74,7 @@
 
 .arrow-next{
   position: absolute;
-  right: 70px;
+  right: 100px;
   top: 50%;
   cursor: pointer;
   width: 80px;
@@ -90,7 +90,7 @@
 
 .arrow-prev{
   position: absolute;
-  left: 70px;
+  left: 100px;
   top: 50%;
   cursor: pointer;
   width: 80px;
@@ -107,11 +107,11 @@
 @media (max-width: 1366px) {
 
   .arrow-next{
-    right: 10px;
+    right: 57px;
   }
 
   .arrow-prev{
-    left: 10px;
+    left: 57px;
   }
 }
 
