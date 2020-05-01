@@ -50,20 +50,31 @@ class App extends React.Component {
                         return (
                             <ReactFullpage.Wrapper>
                                 <div>
-                                    <div className="section" data-anchor="section-1">
-                                        <MainPage modalVisibleChange={this.modalVisibleChange} isModalVisible={this.state.isModalVisible}/>
+                                    <div className="section"
+                                         data-anchor="section-1">
+                                        <MainPage modalVisibleChange={this.modalVisibleChange}
+                                                  isModalVisible={this.state.isModalVisible}/>
                                     </div>
-                                    <div className="section" data-anchor="section-2">
-                                        <div onClick={() => fullpageApi.moveSlideRight()} className="arrow-next"><img
-                                            src="img/arrow-next-mobile.svg" alt="next"/></div>
-                                        <div onClick={() => fullpageApi.moveSlideLeft()} className="arrow-prev"><img
-                                            src="img/arrow-prev-mobile.svg" alt="next"/></div>
-                                        <Portfolio/>
+                                    <div className="section"
+                                         data-anchor="section-2">
+                                        <div onClick={() => fullpageApi.moveSlideRight()}
+                                             className="arrow-next">
+                                            <img src="img/arrow-next-mobile.svg"
+                                                 alt="next"/>
+                                        </div>
+                                        <div onClick={() => fullpageApi.moveSlideLeft()}
+                                             className="arrow-prev">
+                                            <img src="img/arrow-prev-mobile.svg"
+                                                 alt="next"/>
+                                        </div>
+                                        {/*<Portfolio/>*/}
                                     </div>
-                                    <div className="section top" data-anchor="section-3">
+                                    <div className="section top"
+                                         data-anchor="section-3">
                                         <About/>
                                     </div>
-                                    <div className="section" data-anchor="section-4">
+                                    <div className="section"
+                                         data-anchor="section-4">
                                         <Contact/>
                                     </div>
                                 </div>

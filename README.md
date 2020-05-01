@@ -1,8 +1,8 @@
-#Шаблон React приложения
+# Шаблон React приложения
 
 ---
 
-###Инициализация проекта
+### Инициализация проекта
 
 ```powershell
 powershell ./powershell/install.ps1
