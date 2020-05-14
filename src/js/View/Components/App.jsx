@@ -67,7 +67,7 @@ class App extends React.Component {
                                             <img src="img/arrow-prev-mobile.svg"
                                                  alt="next"/>
                                         </div>
-                                        {/*<Portfolio/>*/}
+                                        <Portfolio/>
                                     </div>
                                     <div className="section top"
                                          data-anchor="section-3">
