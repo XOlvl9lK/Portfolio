@@ -1,0 +1,56 @@
+.navigation{
+  position: fixed;
+  top: 40%;
+  height: 300px;
+  width: 100px;
+  right: -40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  a{
+    width: 12px;
+    height: 12px;
+    background: none;
+    border: 3px solid white;
+    border-radius: 100%;
+    margin-bottom: 40px;
+    margin-right: 30px;
+    transition: transform 300ms, border-color 300ms;
+
+    &:last-child{
+      margin-bottom: 0;
+    }
+
+    &:hover{
+      transform: scale(1.8);
+      border-color: #AC0C0C;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .navigation{
+    display: none;
+  }
+}
+
+.active-anchor{
+  animation: navigate 300ms;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navigate {
+  from{
+    transform: scale(1);
+    border-color: white;
+  }
+  to{
+    transform: scale(1.8);
+    border-color: #AC0C0C;
+  }
+}
